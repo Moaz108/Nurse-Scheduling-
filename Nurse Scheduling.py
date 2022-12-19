@@ -53,7 +53,7 @@ if __name__ == '__main__' :
                 working_days.append ( IN )
             return working_days
 
-        def Hard_costrain ( self ) :  # first hard conrtaint chick is all nurses working in range ( 3 : 5 ) day per week
+        def Hard_costrain ( self ) :  # first hard conrtaint chick is all nurses working in range ( 0 : 6 ) day per week
             working_days = self.working_days_for_nurses ( )  # getting working days for all nurses in week
             # working_days is the list has all nurses working days in week
             for i in range ( len ( working_days ) ) :
@@ -507,8 +507,8 @@ if __name__ == '__main__' :
         x=best_parent.schedule
         nurse_size=n_nurse
         T.tag_config('bbk', background="black")
-        T.tag_config('warning',  foreground="red",font='Helvetica 18 bold')
-        T.tag_config('warning1',  foreground="blue",font='Helvetica 18 bold')
+        T.tag_config('warning',  foreground="darkred",font='Helvetica 18 bold')
+        T.tag_config('warning1',  foreground="darkblue",font='Helvetica 18 bold')
         T.tag_config('warning2',font='Helvetica 18 bold')
         T.insert(tk.END,"validation_state :",'warning1')
         T.insert(tk.END,str ( best_parent.validation ),'warning')
@@ -533,7 +533,7 @@ if __name__ == '__main__' :
         T.insert(tk.END,"\n")
         
         if len ( best_parent.Reason ) != 0 :
-            
+                
             T.insert(tk.END,"Conflict Resons :",'warning1')
            
             for i in range ( len ( best_parent.Reason ) ) :
