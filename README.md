@@ -72,20 +72,4 @@ A development environment that supports running and testing Genetic Algorithms.
 Installation
 Clone the Repository:
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/nurse-scheduling-problem.git
-cd nurse-scheduling-problem
-Install Dependencies:
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the Project:
-
-bash
-Copy
-Edit
-python main.py
